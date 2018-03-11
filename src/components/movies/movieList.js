@@ -8,8 +8,6 @@ export default class MovieList extends Component {
   render() {
     const { movies } = this.props
 
-    console.log('movies', movies)
-
     return (
       <div>
         {movies.map((movie, index) => (
