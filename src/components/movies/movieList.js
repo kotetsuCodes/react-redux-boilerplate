@@ -12,8 +12,8 @@ export default class MovieList extends Component {
 
     return (
       <div>
-        {movies.map(movie => (
-          <div>
+        {movies.map((movie, index) => (
+          <div key={index}>
             <span>
               Title: {movie.title} Year: {movie.year}
             </span>
