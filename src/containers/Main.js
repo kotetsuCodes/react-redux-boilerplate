@@ -3,8 +3,6 @@ import { getMovies } from '../redux/movies/actions'
 import MovieList from '../components/movies/movieList'
 
 function mapStateToProps(state) {
-  console.log('state', state)
-
   return {
     movies: state.movies.get('movies'),
   }
